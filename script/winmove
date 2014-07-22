@@ -1,0 +1,9 @@
+#!/bin/bash
+
+dir=$1
+
+if xprop -id $(bspc query -W -w focused) |grep _NET_WM_NAME |grep VIM\"$ >/dev/null; then
+  xdotool key --clearmodifiers ctrl+$(echo $dir |perl -ne 'print ucfirst')
+else
+  bspc window -f $dir
+fi
