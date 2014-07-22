@@ -24,6 +24,8 @@ panes and bspwm windows seamlessly:
 If you don't have a preferred installation method, I recommend using
 [pathogen][2].  If you have pathogen set up, just do the following:
 
+[2]: https://github.com/tpope/vim-pathogen
+
     cd ~/.vim/bundle
     git clone https://github.com/bentglasstube/vim-bspwm.git
 
@@ -54,6 +56,8 @@ idea for what to configure please do let me know or send a pull request.
 
 Please report any bugs on the [GitHub issue tracker][3] and I will do my best
 to fix them.
+
+[3]: https://github.com/bentglasstube/vim-bspwm/issues
 
 ## Contributing
 
