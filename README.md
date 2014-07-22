@@ -34,15 +34,12 @@ If you wish to change these, you will also have to edit the script.
 
 ### bspwm
 
-This script requires `xorg-xprop`.  Hopefully it can be found in the package
-manager for your favorite distribution.
-
-Presumably you are using `sxhkd` to manage your keybindings.  If you are using
-something else, you are on your own but the instructions should be similar.
+This script requires `xprop` and `xdotool`.  Hopefully they can be found in the
+package manager for your favorite distribution.
 
 There in an included bash script in script/winmove that will forward the
 commands to vim if it detects that the currently focused window is running vim.
-I use something like the following in my sxhkd config:
+I use the following in my sxhkd config:
 
     @super + {h,j,k,l}
       /home/alan/.vim/bundle/vim-bspwm/script/winmove {left,down,up,right}
